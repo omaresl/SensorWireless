@@ -68,7 +68,8 @@ void app_SensorTask(void)
 	/* Read All Sensors */
 	for(lub_i = 0u; lub_i < APP_SENSOR_N_SENSORS; lub_i++)
 	{
-		re_SensorState[lub_i] = digitalRead(raub_DigitalSensorPins[lub_i]);
+		//TODO: Testing
+		re_SensorState[lub_i] = 0x55u;//digitalRead(raub_DigitalSensorPins[lub_i]);
 	}
 
 	lub_BlockAddress = re_SensorState;
