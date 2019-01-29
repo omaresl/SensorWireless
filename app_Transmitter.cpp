@@ -37,7 +37,6 @@ void app_TransmitterInit(void)
  * **************************/
 void app_TransmitterTXBlock(unsigned char *lub_BlockAddress, unsigned lub_blockSize)
 {
-	unsigned char lub_i;
 	/* Ensure that the system is not in receiving mode */
 	ro_Transmitter.stopListening();
 
